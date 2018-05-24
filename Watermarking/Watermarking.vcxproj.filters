@@ -27,6 +27,9 @@
     <ClCompile Include="mark.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="attack.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="1.png">
@@ -50,6 +53,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="mark.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="attack.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

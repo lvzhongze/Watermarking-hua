@@ -74,8 +74,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>G:\Opencv\opencv\build\include;G:\Opencv\opencv\build\include\opencv;G:\Opencv\opencv\build\include\opencv2;$(IncludePath)</IncludePath>
-    <LibraryPath>G:\Opencv\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\software\opencv\opencv\build\include;D:\software\opencv\opencv\build\include\opencv;D:\software\opencv\opencv\build\include\opencv2;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\software\opencv\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -109,7 +109,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opencv_world340d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opencv_world341d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\software\opencv\opencv\build\x64\vc14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -149,6 +150,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="attack.cpp" />
     <ClCompile Include="basicData.cpp" />
     <ClCompile Include="dct.cpp" />
     <ClCompile Include="main.cpp" />
@@ -161,6 +163,7 @@
     <Image Include="1.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="attack.h" />
     <ClInclude Include="basicData.h" />
     <ClInclude Include="dct.h" />
     <ClInclude Include="mark.h" />

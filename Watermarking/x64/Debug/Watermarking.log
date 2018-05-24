@@ -1,14 +1,2 @@
-﻿  mark.cpp
-c:\users\hua\documents\visual studio 2015\projects\watermarking\watermarking\mark.cpp(52): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-c:\users\hua\documents\visual studio 2015\projects\watermarking\watermarking\mark.cpp(103): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-c:\users\hua\documents\visual studio 2015\projects\watermarking\watermarking\mark.cpp(104): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-c:\users\hua\documents\visual studio 2015\projects\watermarking\watermarking\mark.cpp(105): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-c:\users\hua\documents\visual studio 2015\projects\watermarking\watermarking\mark.cpp(106): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-c:\users\hua\documents\visual studio 2015\projects\watermarking\watermarking\mark.cpp(253): error C3861: “cv2DRotationMatrix”: 找不到标识符
-c:\users\hua\documents\visual studio 2015\projects\watermarking\watermarking\mark.cpp(255): error C2065: “CV_INTER_LINEAR”: 未声明的标识符
-c:\users\hua\documents\visual studio 2015\projects\watermarking\watermarking\mark.cpp(255): error C2065: “CV_WARP_FILL_OUTLIERS”: 未声明的标识符
-c:\users\hua\documents\visual studio 2015\projects\watermarking\watermarking\mark.cpp(255): error C3861: “cvWarpAffine”: 找不到标识符
-  正在生成代码...
-  正在编译...
-  main.cpp
-  正在生成代码...
+﻿  Watermarking.vcxproj -> D:\file\work\jingsai\x64\Debug\Watermarking.exe
+  Watermarking.vcxproj -> D:\file\work\jingsai\x64\Debug\Watermarking.pdb (Full PDB)

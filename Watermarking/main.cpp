@@ -4,7 +4,7 @@
 #include "basicData.h"
 #include "dct.h"
 #include "mark.h"
-
+#include "attack.h"
 #define N 800
 #define M 200
 
@@ -14,11 +14,10 @@ int imageArray0[N][N];
 int imageArray1[N][N];
 int imageA[800 * 800] = { 0 };
 int waterMarkArray[M][M];
-
+int imageOneDArray[800 * 800];
 
 int main()
 {
-	
 	/******************************************************************************************
 	//main
 	vector<Mat> imageMat, waterMarketMat;
@@ -62,6 +61,71 @@ int main()
 
 	//以下是各种函数的测试
 
+	//void mat2array4x4(Mat image, T (&imageArray)[N],int squrtN)
+	//void array2mat4x4(Mat image, T(&imageArray)[N], int squrtN)
+	vector<Mat> imageMat;
+	Mat image = imread("1.jpg");
+	split(image, imageMat);
+	Mat image0 = imageMat[1];
+	Mat image1 = imageMat[1];
+	mat2array((int*)imageArray0, image0);
+	mat2array4x4(image1, imageOneDArray);
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 4; j++) {
+			cout << imageArray0[i][j] << ' ';
+		}
+		cout << endl;
+	}
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 4; j++) {
+			cout << (int)image1.at<uchar>(i,j) << ' ';
+		}
+		cout << endl;
+	}
+	for (int i = 0; i < 16; i++)
+		cout << imageOneDArray[i] << ' ';
+	array2mat4x4(image1, imageOneDArray);
+	imshow("图像", image1);
+	
+
+	/******************************************************************************************
+	//图像切割
+	Mat image = imread("1.jpg");
+	Mat image1 = imread("1.jpg");
+	cut(image, 50, 50, 500, 500);
+	imshow("切割后的图像", image);
+	imshow("原始图像", image1);
+	******************************************************************************************/
+
+	/******************************************************************************************
+	//测试椒盐噪声
+	Mat image = imread("1.jpg");
+	Mat image1 = imread("1.jpg");
+	salt(image, 500);
+	imshow("带有噪声的图像", image);
+	imshow("原始图像", image1);
+	******************************************************************************************/
+
+	/******************************************************************************************
+	//测试高斯噪声
+	Mat image = imread("1.jpg");
+	Mat image1 = imread("1.jpg");
+	image = addGaussianNoise(image1);
+	imshow("带有噪声的图像", image);
+	imshow("原始图像", image1);
+	******************************************************************************************/
+
+	/******************************************************************************************
+	//void rotateImage(IplImage* img, IplImage *img_rotate, int degree) 函数测试
+	IplImage* iplImg = cvLoadImage("1.jpg");
+	IplImage* iplImg1 = cvLoadImage("1.jpg");
+	myrotateImage(iplImg, iplImg1, 90);
+	Mat mtx = cvarrToMat(iplImg1, true);
+
+	//imshow("原图像", image00);
+	imshow("旋转之后的图像", mtx);
+	*******************************************************************************************/
+	/******************************************************************************************
 	//getPNSR函数测试double getPSNR(const Mat& I1, const Mat& I2)
 	Mat image0(2, 2, CV_8U);
 	image0.at<uchar>(0, 0) = 1;
@@ -73,11 +137,14 @@ int main()
 	image1.at<uchar>(0, 0) = 1;
 	image1.at<uchar>(0, 1) = 2;
 	image1.at<uchar>(1, 0) = 3;
-	image1.at<uchar>(1, 1) = 1;
+	image1.at<uchar>(1, 1) = 3;
+
+	cout << "image0.total: " << image0.total() << endl;
+	cout << "image0.channels: " << image0.channels() << endl;
 
 	double pnsr = getPSNR(image0, image1);
 	cout << pnsr << endl;
-	
+	*********************************************************************************************/
 	/*******************************************************************************************
 	//void dct2d4x4(short int data[16], short int dataout[16])测试代码段
 	short int data[16] = { -97,-96,-95,-82,-95,-95,-94,-71,-96,-96,-94,-61,-95,-95,-95,-57 };
