@@ -95,7 +95,17 @@ void arrayInsert(int* imageArray, int* subImageArray, dataRect* rect);
 
 template<unsigned N>
 void mat2array4x4(Mat image, int (&imageArray)[N])
+/**************************************************************************************
+描述:				将输入的mat格式的image转换成一维数组，转换的策略是以每个4x4小块为单位
+输入:               mat格式的image
+				    imageArray是一个一维数组，其大小是image.rows*image.cols
+输出:				
+返回值:
+调用清单:
+其他:
+**************************************************************************************/
 {
+	//使用k来记录一维数组的下标
 	int k = 0;
 	for (int i = 0; i < image.rows; i = i+4) {
 		for (int j = 0; j < image.cols; j = j+4) {
@@ -120,15 +130,25 @@ void mat2array4x4(Mat image, int (&imageArray)[N])
 				imageArray[k + 14] = (int)image.at<uchar>(i + 3, j + 2);  //block[14]
 				imageArray[k+15] = (int)image.at<uchar>(i + 3, j + 3);  //block[15]
 				
-				k = k + 16;
+				k = k + 16;		//每复制16个（也就是一个4x4小块）k要加16
 		}
 	}
 }
 
 template<unsigned N>
 void array2mat4x4(Mat image, int(&imageArray)[N])
+/**************************************************************************************
+描述:				将输入的一维数组转换成mat，转换的策略是以每个4x4小块为单位
+输入:               mat格式的image
+					
+					imageArray是一个一维数组，其大小是image.rows*image.cols
+输出:
+返回值:
+调用清单:
+其他:
+**************************************************************************************/
 {
-	int k = 0;
+	int k = 0;		//使用k来记录一维数组的下标
 	for (int i = 0; i < image.rows; i += 4) {
 		for (int j = 0; j < image.cols; j += 4) {
 			
@@ -151,8 +171,7 @@ void array2mat4x4(Mat image, int(&imageArray)[N])
 				image.at<uchar>(i + 3, j + 2) = (uchar)imageArray[k + 14];	//block[14]
 				image.at<uchar>(i + 3, j + 3) = (uchar)imageArray[k + 15];	//block[15]
 
-				k = k + 16;
-			
+				k = k + 16;		//每复制16个（也就是一个4x4小块）k要加16
 		}
 	}
 }

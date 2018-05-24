@@ -1,7 +1,7 @@
 #include"mark.h"
 #include<iostream>
 #define ratio 0.12			//block4x4[xx][yy] = block4x4[xx][yy] * (1 + a*ratio)
-#define xx 2				
+#define xx 7				
 #define yy 1
 
 //8x8水印可调参数
@@ -123,6 +123,35 @@ int dctEmbed( int* imageArray, int* waterMarkArray, dctParameter* para)
 	}
 }
 
+int dctEmbedOneArray(int imageArray[800 * 800], int dctImageArray[800 * 800], int waterMarkArray[200 * 200])
+{
+	//开始做水印嵌入
+	short int data[16] = { 0 };
+	short int dctData[16] = { 0 };
+	int a = 0;
+	printf("开始水印嵌入\n");
+	for (int i = 0; i < 200 * 200; i++) {
+		for (int j = 0; j < 16; j++) {
+			data[j] = imageArray[i * 16 + j];
+		}
+		dct2d4x4oneD(data, dctData);
+		if (waterMarkArray[i] >= 128) {
+			a = -1;
+		}
+		else {
+			a = 1;
+		}
+		dctData[xx] = dctData[xx] * (1 + a*ratio);
+		idct2d4x4oneD(dctData, data);
+		for (int j = 0; j < 16; j++) {
+			dctImageArray[i * 16 + j] = data[j];
+		}
+	}
+	printf("水印嵌入结束\n");
+	return 0;
+}
+
+
 int dctExtra(int* imageArray, int* afterDctImageArray, int* waterMarkArray, dctParameter* para)
 {
 	int block4x4Image[4][4] = { 0 };
@@ -217,6 +246,34 @@ int dctExtra(int* imageArray, int* afterDctImageArray, int* waterMarkArray, dctP
 	else {
 		return 0;
 	}
+}
+
+int dctExtraOneArray(int imageArray[800 * 800], int dctImageArray[800 * 800], int waterMarkArray[200 * 200])
+{
+	printf("开始水印提取\n");
+	short int dataO[16] = { 0 };	//用来存原始图像（imageArray）
+	short int dataA[16] = { 0 };	//用来存经过dct变换的图像（dctImageArray）
+	short int idctDataO[16] = { 0 };
+	short int idctDataA[16] = { 0 };
+	float a = 0;
+	for (int i = 0; i < 200 * 200; i++) {
+		for (int j = 0; j < 16; j++) {
+			dataO[j] = imageArray[i * 16 + j];
+			dataA[j] = dctImageArray[i * 16 + j];
+		}
+		dct2d4x4oneD(dataO, idctDataO);
+		dct2d4x4oneD(dataA, idctDataA);
+		a = (float)idctDataA[xx] / (float)idctDataO[xx] - 1;
+		a = a / ratio;
+		if (square(a - 1) - square(a + 1)<0) {
+			waterMarkArray[i] = 0;
+		}
+		else {
+			waterMarkArray[i] = 255;
+		}
+	}
+	printf("水印提取结束\n");
+	return 0;
 }
 
 

@@ -15,11 +15,14 @@ int imageArray1[N][N];
 int imageA[800 * 800] = { 0 };
 int waterMarkArray[M][M];
 int imageOneDArray[800 * 800];
-
+int imageArrayOneD0[N*N];
+int imageArrayOneD1[N*N];
+int dctImageArrayOneD0[N*N];
+int waterMarkArrayOneD[M*M];
 int main()
 {
 	/******************************************************************************************
-	//main
+	//main1 不可综合
 	vector<Mat> imageMat, waterMarketMat;
 	Mat image0, image1,image2, mark0;
 	Mat waterMarketMat0;
@@ -54,13 +57,38 @@ int main()
 	//main
 	******************************************************************************************/
 	
+	//main2 可综合
+	vector<Mat> imageMat, waterMarketMat;
+	Mat image0, image1, image2, mark0;
+	Mat waterMarketMat0;
+	Mat image = imread("1.jpg");
+	Mat waterMarket = imread("01.jpg");
+	dctParameter* para = new dctParameter;
+	para->dctNum = 4;
+	cout << para->dctNum << endl;
 
-
+	split(image, imageMat);							//imageMat为分离后的mat，imageMat[0]是第一个通道。
+	split(waterMarket, waterMarketMat);
+	image0 = imageMat[0];
+	image1 = imageMat[0];
+	//Mat* pimage = image0;
+	mark0 = waterMarketMat[0];
+	mat2array4x4(image0, imageArrayOneD0);
+	mat2array4x4(image1, imageArrayOneD1);
+	mat2array4x4(mark0, waterMarkArrayOneD);
+	dctEmbedOneArray(imageArrayOneD0, dctImageArrayOneD0, waterMarkArrayOneD);
+	array2mat4x4(image0, dctImageArrayOneD0);
+	imshow("dctMat: ", image0);
+	mat2array4x4(image0, imageArrayOneD0);
+	dctExtraOneArray(imageArrayOneD1, dctImageArrayOneD0, waterMarkArrayOneD);
+	array2mat4x4(mark0, waterMarkArrayOneD);
+	imshow("mark0: ", mark0);
 
 
 
 	//以下是各种函数的测试
 
+	/*****************************************************************************************
 	//void mat2array4x4(Mat image, T (&imageArray)[N],int squrtN)
 	//void array2mat4x4(Mat image, T(&imageArray)[N], int squrtN)
 	vector<Mat> imageMat;
@@ -86,7 +114,7 @@ int main()
 		cout << imageOneDArray[i] << ' ';
 	array2mat4x4(image1, imageOneDArray);
 	imshow("图像", image1);
-	
+	*******************************************************************************************/
 
 	/******************************************************************************************
 	//图像切割

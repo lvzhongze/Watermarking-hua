@@ -33,6 +33,9 @@ int dctEmbed(int* imageArray, int* waterMarkArray, dctParameter* para);
 其他:
 **************************************************************************************/
 
+int dctEmbedOneArray(int imageArray[800 * 800], int dctImageArray[800 * 800], int waterMarkArray[200 * 200]);
+
+
 int dctExtra(int* imageArray, int* afterDctImageArray, int* waterMarkArray, dctParameter* para);
 /**************************************************************************************
 描述:				此函数为水印提取操作
@@ -45,6 +48,7 @@ int dctExtra(int* imageArray, int* afterDctImageArray, int* waterMarkArray, dctP
 					void dct2d4x4(int(*data)[4],int blockSize)
 其他:
 **************************************************************************************/
+int dctExtraOneArray(int imageArray[800 * 800], int dctImageArray[800 * 800], int waterMarkArray[200 * 200]);
 
 template<unsigned M, unsigned N>
 double getNC(const int(&arrayo)[M][N], const int(&arrayr)[M][N])
