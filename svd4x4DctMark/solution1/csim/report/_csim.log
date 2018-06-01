@@ -1,0 +1,8 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../basicData.cpp in debug mode
+   Compiling ../../../main_tb.cpp in debug mode
+   Compiling ../../../dct.cpp in debug mode
+   Compiling ../../../svd.cpp in debug mode
+   Compiling ../../../svdEmbed.cpp in debug mode
+   Generating csim.exe

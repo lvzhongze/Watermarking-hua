@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="svd.cpp" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\svd.cpp"/>
+    <originFiles name="svd.h" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\svd.h"/>
+    <originFiles name="svdEmbed.cpp" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\svdEmbed.cpp"/>
+    <originFiles name="svdEmbed.h" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\svdEmbed.h"/>
+    <originFiles name="dct.cpp" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\dct.cpp"/>
+    <originFiles name="dct.h" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\dct.h"/>
+  </source>
+  <testbench>
+    <originFiles name="main_tb.cpp" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\main_tb.cpp"/>
+    <originFiles name="01.jpg" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\01.jpg"/>
+    <originFiles name="1.jpg" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\1.jpg"/>
+    <originFiles name="basicData.cpp" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\basicData.cpp"/>
+    <originFiles name="basicData.h" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\basicData.h"/>
+    <originFiles name="2.jpg" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\2.jpg"/>
+    <originFiles name="3.jpg" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\3.jpg"/>
+    <originFiles name="4.jpg" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\4.jpg"/>
+    <originFiles name="5.jpg" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\5.jpg"/>
+    <originFiles name="6.jpg" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\6.jpg"/>
+    <originFiles name="7.jpg" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\7.jpg"/>
+    <originFiles name="8.jpg" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\8.jpg"/>
+    <originFiles name="9.jpg" path="C:\Users\DELL\Documents\vivadoHls\waterMark\svd_dctMark\svdDctMark\9.jpg"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

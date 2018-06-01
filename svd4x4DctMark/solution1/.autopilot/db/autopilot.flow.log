@@ -1,0 +1,230 @@
+INFO: [HLS 200-0] Workspace C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/solution1 opened at Fri Jun 01 21:43:30 +0800 2018
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Command     config_clock returned 0; 0 sec.
+Execute     open_platform DefaultPlatform 
+Command     open_platform returned 0; 0 sec.
+Execute     import_lib D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq 
+Execute       source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/plb46.lib 
+Command           ap_source returned 0; 0 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/fsl.lib 
+Command           ap_source returned 0; 0 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/axi4.lib 
+Command           ap_source returned 0; 0 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.lib 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.lib 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.001 sec.
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.lib 
+Command         ap_source returned 0; 0 sec.
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.lib 
+Command         ap_source returned 0; 0 sec.
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfft.lib 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfir.lib 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.003 sec.
+Execute       source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_old.lib 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_vivado.lib 
+Command       ap_source returned 0; 0 sec.
+Execute       source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command         ap_source returned 0; 0 sec.
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.001 sec.
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.003 sec.
+Execute       source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/dsp48e1.hlp 
+Command       ap_source returned 0; 0.001 sec.
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Command       config_chip_info returned 0; 0 sec.
+Execute       config_chip_info -quiet -speed medium 
+Command       config_chip_info returned 0; 0 sec.
+Execute       source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command           ap_source returned 0; 0 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0 sec.
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.003 sec.
+Command     import_lib returned 0; 0.016 sec.
+Execute     source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0.002 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0.003 sec.
+Execute             source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.006 sec.
+Command           ap_source returned 0; 0.009 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0.011 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0.007 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0.003 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.085 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.12 sec.
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.123 sec.
+Command     ap_source returned 0; 0.123 sec.
+Execute     open_platform DefaultPlatform 
+Command     open_platform returned 0; 0 sec.
+Execute     import_lib D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_hp.lib 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.003 sec.
+Execute       source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command             ap_source returned 0; 0 sec.
+Execute             source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command             ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0 sec.
+Execute           source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.004 sec.
+Command       ap_source returned 0; 0.004 sec.
+Execute       source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq_hp.hlp 
+Command       ap_source returned 0; 0.002 sec.
+Command     import_lib returned 0; 0.018 sec.
+Execute     source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/software/work/Xilinx/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source returned 0; 0.002 sec.
+Command     ap_source returned 0; 0.002 sec.
+Execute     set_part xc7z045ffg900-2 
+Execute       add_library xilinx/zynq/zynq:xc7z045:ffg900:-2 
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         license_isbetapart xc7z045 
+Command         license_isbetapart returned 1; 0.026 sec.
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Command         config_chip_info returned 0; 0 sec.
+Execute         config_chip_info -quiet -speed medium 
+Command         config_chip_info returned 0; 0 sec.
+Command       add_library returned 0; 0.03 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Command       add_library returned 0; 0.001 sec.
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Command     set_part returned 0; 0.061 sec.
+Execute     get_default_platform 
+Command     get_default_platform returned 0; 0 sec.
+Execute     config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Command     config_chip_info returned 0; 0 sec.
+Execute     config_chip_info -quiet -speed medium 
+Command     config_chip_info returned 0; 0 sec.
+Command   open_solution returned 0; 0.232 sec.
+Execute   csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/01.jpg 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/01.jpg 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/1.jpg 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/1.jpg 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/2.jpg 
+Command     is_encrypted returned 0; 0.001 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/2.jpg 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/3.jpg 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/3.jpg 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/4.jpg 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/4.jpg 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/5.jpg 
+Command     is_encrypted returned 0; 0.001 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/5.jpg 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/6.jpg 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/6.jpg 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/7.jpg 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/7.jpg 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/8.jpg 
+Command     is_encrypted returned 0; 0.001 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/8.jpg 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/9.jpg 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/9.jpg 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/basicData.cpp 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/basicData.cpp 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/basicData.h 
+Command     is_encrypted returned 0; 0.001 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/basicData.h 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/main_tb.cpp 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/main_tb.cpp 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/dct.cpp 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/dct.cpp 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/dct.h 
+Command     is_encrypted returned 0; 0.001 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/dct.h 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/svd.cpp 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/svd.cpp 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/svd.h 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/svd.h 
+Command     is_xip returned 0; 0 sec.
+Execute     is_encrypted C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/svdEmbed.cpp 
+Command     is_encrypted returned 0; 0.001 sec.
+Execute     is_xip C:/Users/DELL/Documents/vivadoHls/waterMark/svd_dctMark/svdDctMark/svdEmbed
