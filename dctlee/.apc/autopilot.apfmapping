@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="mark.h" path="D:\file\vivadoHls\dctlee\mark.h"/>
+    <originFiles name="mark.cpp" path="D:\file\vivadoHls\dctlee\mark.cpp"/>
+    <originFiles name="dct.h" path="D:\file\vivadoHls\dctlee\dct.h"/>
+    <originFiles name="dct.cpp" path="D:\file\vivadoHls\dctlee\dct.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="D:\file\vivadoHls\dctlee\main.cpp"/>
+    <originFiles name="basicdata.h" path="D:\file\vivadoHls\dctlee\basicdata.h"/>
+    <originFiles name="attack.h" path="D:\file\vivadoHls\dctlee\attack.h"/>
+    <originFiles name="attack.cpp" path="D:\file\vivadoHls\dctlee\attack.cpp"/>
+    <originFiles name="9.png" path="D:\file\vivadoHls\dctlee\9.png"/>
+    <originFiles name="9.jpg" path="D:\file\vivadoHls\dctlee\9.jpg"/>
+    <originFiles name="8.png" path="D:\file\vivadoHls\dctlee\8.png"/>
+    <originFiles name="8.jpg" path="D:\file\vivadoHls\dctlee\8.jpg"/>
+    <originFiles name="7.png" path="D:\file\vivadoHls\dctlee\7.png"/>
+    <originFiles name="7.jpg" path="D:\file\vivadoHls\dctlee\7.jpg"/>
+    <originFiles name="6.png" path="D:\file\vivadoHls\dctlee\6.png"/>
+    <originFiles name="6.jpg" path="D:\file\vivadoHls\dctlee\6.jpg"/>
+    <originFiles name="5.png" path="D:\file\vivadoHls\dctlee\5.png"/>
+    <originFiles name="5.jpg" path="D:\file\vivadoHls\dctlee\5.jpg"/>
+    <originFiles name="4.png" path="D:\file\vivadoHls\dctlee\4.png"/>
+    <originFiles name="4.jpg" path="D:\file\vivadoHls\dctlee\4.jpg"/>
+    <originFiles name="3.png" path="D:\file\vivadoHls\dctlee\3.png"/>
+    <originFiles name="3.jpg" path="D:\file\vivadoHls\dctlee\3.jpg"/>
+    <originFiles name="2.png" path="D:\file\vivadoHls\dctlee\2.png"/>
+    <originFiles name="2.jpg" path="D:\file\vivadoHls\dctlee\2.jpg"/>
+    <originFiles name="1.png" path="D:\file\vivadoHls\dctlee\1.png"/>
+    <originFiles name="1.jpg" path="D:\file\vivadoHls\dctlee\1.jpg"/>
+    <originFiles name="033.jpg" path="D:\file\vivadoHls\dctlee\033.jpg"/>
+    <originFiles name="03.jpg" path="D:\file\vivadoHls\dctlee\03.jpg"/>
+    <originFiles name="022.jpg" path="D:\file\vivadoHls\dctlee\022.jpg"/>
+    <originFiles name="02.jpg" path="D:\file\vivadoHls\dctlee\02.jpg"/>
+    <originFiles name="011.jpg" path="D:\file\vivadoHls\dctlee\011.jpg"/>
+    <originFiles name="01.png" path="D:\file\vivadoHls\dctlee\01.png"/>
+    <originFiles name="01.jpg" path="D:\file\vivadoHls\dctlee\01.jpg"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
